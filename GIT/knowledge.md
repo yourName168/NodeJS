@@ -25,7 +25,7 @@ tài liệu tham khảo:
 - Để cầu hình email/username ở global/local:
         git config --global/local user.email yourEmail/user.username yourName
 2. Git status, git add & git commit
-*) Git status: giúp nhận biết hiện đang ở nhánh nào, trạng thái của nhánh so với origin
+ Git status: giúp nhận biết hiện đang ở nhánh nào, trạng thái của nhánh so với origin
 - Git chia làm 4 khu vực:
 + Khu vực code(vẫn ở trên local)
 + Khu vực stagging: sau khi dùng 'git add' thì file sẽ được đẩy lên khu vực này(vẫn nằm ở local)
@@ -70,3 +70,13 @@ tài liệu tham khảo:
         + Clone bằng HTTPS:
         lấy https trên github và dùng câu lệnh :
             git clone linkTrênGithub
+3. Git log
+- Giúp xem được có những commit nào gần đây
+    git log
+    hoặc
+    git log --oneline để xem một cách rút gọn hơn
+4. git pull
+- Sử dụng để kéo code từ remote repo về local repo
+- Giả sử repo có nhiều người cùng tham gia phát triển thì khi có người sửa và push code lên thì code mới chỉ có trên remote repo chứ chưa có trên local repo
+- Vậy nên cần phải kéo code về để tiếp tục chỉnh sửa hoặc sử dụng
+- Cách kéo code bằng git pull
