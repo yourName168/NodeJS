@@ -54,8 +54,9 @@ tài liệu tham khảo:
                 git remote add origin git@github.com:yourName168/
                 repositoryName.git
             chuyển sang nhánh cần đẩy code
-                git branch -M main
+                git branch -M branchName(thường là main)
             Push code lên trên remote
+                git push -u origin branchName
         
     - Các cách clone :
         + Clone bằng SSH (nên dùng vì tiện và bảo mật): Cần tạo SSH key trước
