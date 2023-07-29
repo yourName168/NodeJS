@@ -79,4 +79,5 @@ tài liệu tham khảo:
 - Sử dụng để kéo code từ remote repo về local repo
 - Giả sử repo có nhiều người cùng tham gia phát triển thì khi có người sửa và push code lên thì code mới chỉ có trên remote repo chứ chưa có trên local repo
 - Vậy nên cần phải kéo code về để tiếp tục chỉnh sửa hoặc sử dụng
-- Cách kéo code bằng git pull
+- Cách kéo code bằng git pull:
+    git pull origin main
