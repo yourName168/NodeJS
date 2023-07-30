@@ -6,10 +6,10 @@ tài liệu tham khảo:
     https://duthanhduoc.com/blog/toi-hoc-lai-git-tu-dau-part-2
     3.Top những câu lệnh Git dùng trong thực tế: 
     https://duthanhduoc.com/blog/top-nhung-cau-lenh-git-dung-trong-thuc-te
-
+I. GIT CƠ BẢN
 1. Git căn bản
--Nào một folder vào chạy câu lệnh git init trên git terminal để tạo repository
--Những file, folder nằm trong folder chứa .git mới được đặt trong repository
+- Vào một folder vào chạy câu lệnh git init trên git terminal để tạo repository
+- Những file, folder nằm trong folder chứa .git mới được đặt trong repository
     -Có hai loại repository là:
     + local repository: được lưu trữ và quản lí trên máy tính
     + remote repository: được lưu trữ và quản lí trên server(github, gitLab,..)
@@ -79,3 +79,23 @@ tài liệu tham khảo:
 - Vậy nên cần phải kéo code về để tiếp tục chỉnh sửa hoặc sử dụng
 - Cách kéo code bằng git pull:
     git pull origin main
+5. Cách giải quyết conflict
+- Conflict là hiện tượng xung đột dữ liệu giữa remote repo và local repo
+    Ví dụ: Bạn chỉnh sửa code ở local và định push code lên trên remote nhưng trên remote có ai đó sửa code của bạn và khi đó bạn push lên sẽ xảy ra xung đột dữ liệu 
+- Cách giải quyết:
+    + dùng git pull để kéo code từ remote về local
+    + Sau đó quyết định chỉnh sửa lần cuối
+    + Cuối cùng sử dụng như bình thường(add->commit->push)
+6. .gitignore
+- Trong thực tế có những file chúng ta không muốn bị git giám sát nên những file/folder như vậy chúng ta sẽ để trong file .gitignore được khởi tạo trong cùng folder với file .git
+- Như vậy khi add/commit/push thì những file/folder này vẫn không bị git giám sát
+- trong file .gitignore để phân biệt giữa file và folder thì cuối folder nên thêm dấu '/' để tránh trường hợp có file trùng tên với folder đó ở cùng cấp
+- Muốn cmt bắt đầu bằng ký tự "#"
+Example:
+    folderName/** #ignore mọi file/folder trong folder folderName
+    !folderName/fileName #trừ fileName không bị ignore
+    folderName/**.js #ignore tất cả các file javascript nhưng những file khác thì không bị
+    log* # ignore tất cả các file có phần đầu là log
+7. README.md
+xem ở: https://www.duocmmo.com/classroom/nodejs-super/readmemd-la-gi-viet-nhu-the-nao
+II. GIT NÂNG CAO
