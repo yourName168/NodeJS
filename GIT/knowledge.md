@@ -44,8 +44,6 @@ tài liệu tham khảo:
         git commit -m "your message"
 
 + Khu vực remote(origin): sau khi file đã ở committed thì sử dụng git push để đẩy file code lên trên server(nằm trên server)
-
-
     Note Để push code thì bạn phải có remote repo và local repo của bạn phải kết nối với remote repo đó
     - Để kết nối với remote repo thì thường có 2 cách:
         + Clone remote repo về local, lúc này thì local bạn sẽ có local repo và được kết nối sẵn với remote repo
