@@ -1,0 +1,4 @@
+- MVC model: là mô hình gồm model, view, controller
+- Khi người dùng gọi 1 request thì controller sẽ tiếp nhận request và xử lý.
+- Model sẽ đảm nhận việc thực hiện trao đổi với db
+- View là phần hiển thị cho người dùng xem

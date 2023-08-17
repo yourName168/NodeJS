@@ -22,4 +22,4 @@
     + index.ts: file tổng
     + type.d.ts: khai báo kiểu dữ liệu thêm
 
- 
+- Cách cài đặt: https://duthanhduoc.com/blog/setup-du-an-nodejs-typescript
